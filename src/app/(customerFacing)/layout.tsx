@@ -2,20 +2,22 @@ import { Nav, NavLink } from "@/components/Nav";
 
 export const dynamic = "force-dynamic";
 
-export default function Layout({
+export default function CustomerFacingLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <>
-      <Nav>
-        <NavLink href="/products">Products</NavLink>
-        <NavLink href="/shipping">Shipping</NavLink>
-        <NavLink href="/about">About</NavLink>
-        <NavLink href="/refer">Refer Friends</NavLink>
-      </Nav>
-      {/* <div className="container my-6">{children}</div> */}
+      <div className="min-h-screen bg-background">
+        <Nav>
+          <NavLink href="/products">Products</NavLink>
+          <NavLink href="/shipping">Shipping</NavLink>
+          <NavLink href="/about">About</NavLink>
+          <NavLink href="/refer">Refer Friends</NavLink>
+        </Nav>
+        {children}
+      </div>
     </>
   );
 }
