@@ -9,7 +9,7 @@ export default function CustomerFacingLayout({
 }>) {
   return (
     <>
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background relative">
         <Nav>
           <NavLink href="/products">Products</NavLink>
           <NavLink href="/shipping">Shipping</NavLink>

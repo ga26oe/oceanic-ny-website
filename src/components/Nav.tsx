@@ -22,7 +22,7 @@ const BrandLogo = () => {
 
 export function Nav({ children }: { children: ReactNode }) {
   return (
-    <nav className="bg-secondary-foreground text-primary-foreground flex items-center justify-between px-4">
+    <nav className="absolute top-0 left-0 right-0 z-50 bg-secondary-foreground text-primary-foreground flex items-center justify-between px-4">
       <BrandLogo />
       <div className="flex items-center space-x-8">{children}</div>
     </nav>
